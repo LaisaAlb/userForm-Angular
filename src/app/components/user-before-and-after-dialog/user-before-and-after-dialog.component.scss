@@ -1,0 +1,25 @@
+.infos{
+    &__row{
+        display: flex;
+    }
+    &__item{
+        width: 50%;
+        padding: 10px;
+        background-color: #d9d9d9;
+    }
+    &__header{
+        background-color: black;
+        color: white;
+        text-align: center;
+        &--border-top-left{
+            border-top-left-radius: 7px; 
+        } 
+        &--border-top-rigth{
+            border-top-right-radius: 7px; 
+        }
+    }
+
+    &__row &__item:not(&__header):nth-child(2){
+        border-left: 1px solid white;
+    }
+}
